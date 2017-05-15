@@ -7,13 +7,20 @@ Hello! This is my selfbot. It is based off of RhythmBot Selfbot edition by Jake 
 5. Save token.txt.
 6. Run ConnerSelf.py
 7. Profit
+
 For a list of commands, type "..help" in any Discord server once it is running.
 You will know it is running when you see this appear in the Python console:
+
+
 #-----------------------
+
 #logged in as: (Your Discord username#Your 4-digit Discord discriminator)
+
 #(Your account ID)
+
+
 #----------------------- 
-(You won't see the hashtags, those are just there so the formatting is not borked) 
+(You won't see the hashtags, those are just there so the formatting is not borked. it will be all condensed.) 
 
 The bot prefix is ".."
 The "..help" embed is kinda messy, but it is readible.
