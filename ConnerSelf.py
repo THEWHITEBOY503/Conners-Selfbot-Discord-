@@ -189,7 +189,7 @@ async def on_message(message):
 
 
             elif cmd == 'change':
-                await client.edit_message(message, "Most recent: ```v1.4 Added some fresh memes. AKA Added ..dead, ..scream and ..REEEEE```")
+                await client.edit_message(message, "Most recent: ```v1.5 (The GitHub release!) Conner's selfbot is now on GitHub! We're gonna try again with the ..update command.```")
 
             elif cmd == 'online':
                 await client.edit_message(message, "Hello! Conner's selfbot is now online!")
@@ -225,7 +225,17 @@ async def on_message(message):
 
             elif cmd == 'sslded':
                 await client.edit_message(message, "The chat is dead, now ~~what?~~ I feel like Kai is going to come on.")
-                    
+                
+            elif cmd == 'update':
+                print("Updating!")
+                try:
+                    os.remove("ConnerSelf.py")
+                except:
+                    pass
+                url = "https://github.com/THEWHITEBOY503/Conners-Selfbot-Discord-/blob/master/ConnerSelf.py"
+                urlretrieve(url, "ConnerSelf.py")
+                UpdateRestartMsg = make_embed(title="Update", desc='Conners selfbot has updated and changes will be active after the selfbot is restarted.', color=0x00ff00)
+                await client.edit_message(message, zero_space, embed=UpdateRestartMsg)
                 
 
             
@@ -250,3 +260,4 @@ client.run(token, bot=False)
 # V1.2 Removed "..update" as it would mess up the script and set it back to V1.0
 # V1.3 Added the ..online and ..change command
 # v1.4 Added some fresh memes. AKA Added ..dead, ..scream and ..REEEEE
+# v1.5 (The GitHub release!) Conner's selfbot is now on GitHub! We're gonna try again with the ..update command.
