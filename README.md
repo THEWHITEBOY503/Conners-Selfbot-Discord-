@@ -25,4 +25,4 @@ You will know it is running when you see this appear in the Python console:
 The bot prefix is ".."
 The "..help" embed is kinda messy, but it is readible.
 I'd like to thank Jake Gealer for making the base of this, Kelwing for the embed code, and SSL (discord.gg/ssl) for introducing me to such a wonderful platform. 
-For support, join my WIP Discord (discord.gg/usWqeSF) and go to #Conner_selfbot_support. I am The meme man (Conner)#9719 on Discord. 
+For support, join my WIP Discord (discord.gg/usWqeSF) and go to #Conner_selfbot_support. I am The meme man (Conner)#9719 on Discord. We also have a server dedicated to the selfbot! It's at discord.gg/cGEfMtK 
