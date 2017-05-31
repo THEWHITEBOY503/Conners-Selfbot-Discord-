@@ -232,7 +232,7 @@ async def on_message(message):
                     os.remove("ConnerSelf.py")
                 except:
                     pass
-                url = "https://github.com/THEWHITEBOY503/Conners-Selfbot-Discord-/blob/master/ConnerSelf.py"
+                url = "https://raw.githubusercontent.com/THEWHITEBOY503/Conners-Selfbot-Discord-/master/ConnerSelf.py"
                 urlretrieve(url, "ConnerSelf.py")
                 UpdateRestartMsg = make_embed(title="Update", desc='Conners selfbot has updated and changes will be active after the selfbot is restarted.', color=0x00ff00)
                 await client.edit_message(message, zero_space, embed=UpdateRestartMsg)
