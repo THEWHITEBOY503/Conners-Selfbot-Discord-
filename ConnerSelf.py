@@ -189,7 +189,7 @@ async def on_message(message):
 
 
             elif cmd == 'change':
-                await client.edit_message(message, "Most recent: ```v1.5 (The GitHub release!) Conner's selfbot is now on GitHub! We're gonna try again with the ..update command.```")
+                await client.edit_message(message, "Most recent: ```v1.6 (FINAL UPDATE) Discord selfbots are now against the TOS. Added ..rip, make sure you read that. Goodbye.")
 
             elif cmd == 'online':
                 await client.edit_message(message, "Hello! Conner's selfbot is now online!")
@@ -204,7 +204,7 @@ async def on_message(message):
                 await client.edit_message(message, "https://m.youtube.com/watch?v=sglcHw5OK88")
 
             elif cmd == 'help':
-                Help = make_embed(title="Help", desc="..lmgtfy - self explanitory.  ..afk - Toggle AFK mode.  ..embed - embeds a message.  ..smallembed - a smaller embed.  ..hammer - embeds a gif of __that__ hammer.  ..nobodycares - self explanitory.  ..game - Sets your playing tag.  ..poll - Makes a strawpoll.  ..good/bad - adds a user to your good/bad list.  ..time - self explanitory.  ..pythoneval - self explantiory.  ..calc - self explanitory.  ..about - shows an about message.  ..speedtest - borked.  ..change - shows the most recent change.  ..online - shows the selfbot is online.  ..dead - Shows the server is dead.  ..scream - Micheal P meme.  ..REEEEE - Better Micheal P meme.  ..help - shows this message.  ..edit - rapidly edits a message, cuz y not?  ..sslded - A special chat is dead message for SSL (discord.gg/ssl)  ..update - Updates the Selfbot.", color=0xff0000)
+                Help = make_embed(title="Help", desc="..lmgtfy - self explanitory.  ..afk - Toggle AFK mode.  ..embed - embeds a message.  ..smallembed - a smaller embed.  ..hammer - embeds a gif of __that__ hammer.  ..nobodycares - self explanitory.  ..game - Sets your playing tag.  ..poll - Makes a strawpoll.  ..good/bad - adds a user to your good/bad list.  ..time - self explanitory.  ..pythoneval - self explantiory.  ..calc - self explanitory.  ..about - shows an about message.  ..speedtest - borked.  ..change - shows the most recent change.  ..online - shows the selfbot is online.  ..dead - Shows the server is dead.  ..scream - Micheal P meme.  ..REEEEE - Better Micheal P meme.  ..help - shows this message.  ..edit - rapidly edits a message, cuz y not?  ..sslded - A special chat is dead message for SSL (discord.gg/ssl)  ..update - Updates the Selfbot.   ..rip - a final goodbye from me.", color=0xff0000)
                 await client.edit_message(message, zero_space, embed=Help)
 
             elif cmd == 'edit':
@@ -236,6 +236,9 @@ async def on_message(message):
                 urlretrieve(url, "ConnerSelf.py")
                 UpdateRestartMsg = make_embed(title="Update", desc='Conners selfbot has updated and changes will be active after the selfbot is restarted.', color=0x00ff00)
                 await client.edit_message(message, zero_space, embed=UpdateRestartMsg)
+
+            elif cmd == 'rip':
+                await client.edit_message(Message "The discord TOS has been updated. Userbots and selfbots are now against the TOS. Goodbye everyone,  looks like it's time for me to move onto other projects. If you are still using this selfbot, I suggest you stop using it ASAP as it may result in the deletion of your Discord account. Thank you for umderstanding. Goodbye.``` ~Conner"
                 
 
             
@@ -261,3 +264,4 @@ client.run(token, bot=False)
 # V1.3 Added the ..online and ..change command
 # v1.4 Added some fresh memes. AKA Added ..dead, ..scream and ..REEEEE
 # v1.5 (The GitHub release!) Conner's selfbot is now on GitHub! The ..update command has been fixed!
+# v1.6 (FINAL UPDATE) Discord selfbots are now against the TOS. Added ..rip, make sure you read that. Goodbye.
